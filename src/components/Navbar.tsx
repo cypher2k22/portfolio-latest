@@ -1,36 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+const links = [
+  ['About', '#about'],
+  ['Experience', '#experience'],
+  ['Skills', '#skills'],
+  ['Projects', '#projects'],
+  ['Contact', '#contact'],
+];
 
 const Navbar: React.FC = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav className="glass" style={{
-      position: 'fixed',
-      top: '1rem',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: '90%',
-      maxWidth: '800px',
-      height: '64px',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      padding: '0 2rem',
-      zIndex: 1000,
-    }}>
-      <div className="logo" style={{ fontWeight: 800, fontSize: '1.25rem' }}>
-        BK<span className="text-gradient">.</span>
-      </div>
-      <ul style={{ display: 'flex', gap: '2rem', fontSize: '0.9rem', fontWeight: 600 }}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="mailto:bakeerathan.karthigan@example.com" className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.8rem' }}>
-        Hire Me
-      </a>
-    </nav>
+    <header className="site-header">
+      <nav className="nav-shell" aria-label="Primary navigation">
+        <a className="brand" href="#home" onClick={() => setOpen(false)} aria-label="Bakeerathan Karthigan home">
+          BK<span>.</span>
+        </a>
+        <button className="menu-toggle" type="button" aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} onClick={() => setOpen(!open)}>
+          <span /><span /><span />
+        </button>
+        <div className={open ? 'nav-links is-open' : 'nav-links'}>
+          {links.map(([label, href]) => (
+            <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>
+          ))}
+          <a className="nav-cta" href="#contact" onClick={() => setOpen(false)}>Let's talk <span>↗</span></a>
+        </div>
+      </nav>
+    </header>
   );
 };
 
