@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+# Portfolio v2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal portfolio built with **React + TypeScript + Vite** to present my software engineering work, experience, technical skills, and selected projects.
 
-Currently, two official plugins are available:
+## ✨ Sections
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Hero / introduction
+- About
+- Experience
+- Technical skills
+- Selected projects
+- Contact
+- Footer
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- CSS
+- ESLint
 
-## Expanding the ESLint configuration
+## 🚀 Run Locally
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+    git clone https://github.com/cypher2k22/portfolio-latest.git
+    cd portfolio-latest
+    npm install
+    npm run dev
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Production build:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+    npm run build
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Lint:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+    npm run lint
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👤 Author
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Bakeerathan Karthigan**  
+Computer Engineering Undergraduate  
+GitHub: https://github.com/cypher2k22
+
+## 📌 Status
+
+This is the newer TypeScript-based portfolio implementation. It is intended to become the canonical portfolio after the content and deployment are finalized.
