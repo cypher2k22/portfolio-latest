@@ -1,40 +1,39 @@
 import React from 'react';
 
-const About: React.FC = () => {
-  return (
-    <section id="about" className="container">
-      <div className="glass-card">
-        <p className="heading-sm">About Me</p>
-        <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>
-          Computer Engineering <span className="text-gradient">Undergraduate</span>
-        </h2>
-        
-        <div className="grid grid-2" style={{ gap: '3rem' }}>
-          <div style={{ fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
-            <p style={{ marginBottom: '1.2rem' }}>
-              I am a passionate Computer Engineering student at the University of Sri Jayewardenepura, specializing in full-stack and mobile app development.
-            </p>
-            <p>
-              My journey in software engineering is driven by a desire to build tools that make a difference. I thrive on solving complex problems and turning ideas into functional, beautiful applications.
-            </p>
-          </div>
-          
-          <div style={{ display: 'grid', gap: '1rem' }}>
-            <div className="glass" style={{ padding: '1.5rem', borderLeft: '4px solid var(--accent-blue)' }}>
-              <h4 style={{ color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Education</h4>
-              <p style={{ color: 'var(--text-primary)', fontWeight: 600, fontSize: '0.95rem', marginBottom: '0.25rem' }}>University of Sri Jayewardenepura</p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>BSc (Hons) Computer Engineering</p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', marginTop: '0.25rem' }}>Expected Graduation: 2028</p>
-            </div>
-            <div className="glass" style={{ padding: '1.5rem', borderLeft: '4px solid var(--accent-green)' }}>
-              <h4 style={{ color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Location</h4>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>Sri Lanka (Available for remote work)</p>
-            </div>
-          </div>
-        </div>
+const About: React.FC = () => (
+  <section id="about" className="section">
+    <div className="section-heading">
+      <div>
+        <p className="eyebrow">01 · About</p>
+        <h2>Engineering mindset,<br /><span>practical execution.</span></h2>
       </div>
-    </section>
-  );
-};
+      <p className="section-intro">
+        I enjoy taking an idea from a rough concept to a working system — then improving the architecture,
+        reliability, and user experience as I learn more.
+      </p>
+    </div>
+
+    <div className="about-grid">
+      <article className="about-story card">
+        <p>
+          I'm studying Computer Engineering at the University of Sri Jayewardenepura and building my
+          foundation across data structures, backend engineering, databases, networking, and software development.
+        </p>
+        <p>
+          My projects are where I turn those fundamentals into practice. I especially enjoy systems that
+          connect software to real-world workflows, such as real-time tracking, APIs, mobile applications,
+          and deployment.
+        </p>
+        <div className="quote-line">“Build it. Understand it. Improve it.”</div>
+      </article>
+
+      <div className="about-facts">
+        <div className="fact card"><span>EDUCATION</span><strong>BSc (Hons) Computer Engineering</strong><small>University of Sri Jayewardenepura · Expected 2028</small></div>
+        <div className="fact card"><span>FOCUS</span><strong>Software Engineering</strong><small>Full-stack · Backend · Mobile · Systems</small></div>
+        <div className="fact card"><span>BASED IN</span><strong>Sri Lanka</strong><small>Open to software engineering opportunities</small></div>
+      </div>
+    </div>
+  </section>
+);
 
 export default About;
