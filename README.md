@@ -1,6 +1,6 @@
-# Portfolio v2
+# Bakeerathan Karthigan — Portfolio
 
-A modern personal portfolio built with **React + TypeScript + Vite** to present my software engineering work, experience, technical skills, and selected projects.
+A modern personal portfolio built with **React + TypeScript + Vite** to present my software engineering work, technical skills, and selected projects.
 
 ## ✨ Sections
 
@@ -35,12 +35,21 @@ Lint:
 
     npm run lint
 
+## 📌 Featured Projects
+
+- **BusTrack** — real-time public transport tracking platform
+- **Task Management System** — full-stack API-driven application
+- **Website Development** — frontend/backend integration and deployment
+- **Student Performance Analysis** — Python and Pandas data analysis
+
 ## 👤 Author
 
 **Bakeerathan Karthigan**  
 Computer Engineering Undergraduate  
+University of Sri Jayewardenepura
+
 GitHub: https://github.com/cypher2k22
 
-## 📌 Status
+## 📄 License
 
-This is the newer TypeScript-based portfolio implementation. It is intended to become the canonical portfolio after the content and deployment are finalized.
+This portfolio is maintained as a personal project.
