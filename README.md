@@ -1,55 +1,68 @@
 # Bakeerathan Karthigan — Portfolio
 
-A modern personal portfolio built with **React + TypeScript + Vite** to present my software engineering work, technical skills, and selected projects.
+A modern, responsive personal portfolio for **Bakeerathan Karthigan**, a Computer Engineering undergraduate at the University of Sri Jayewardenepura.
 
-## ✨ Sections
+The site is designed around a simple idea: **show the engineering work clearly, without unnecessary noise.**
 
-- Hero / introduction
-- About
-- Experience
-- Technical skills
-- Selected projects
-- Contact
-- Footer
+## ✨ What is included
 
-## 🛠️ Tech Stack
+- Responsive navigation with mobile menu
+- Engineering-focused hero section
+- Education and technical focus
+- Leadership and university experience timeline
+- Structured technical skills
+- Selected project showcase
+- GitHub and LinkedIn contact links
+- Responsive layouts for desktop, tablet, and mobile
+- Accessible semantic sections and external-link handling
 
-- React
+## 🛠️ Stack
+
+- React 19
 - TypeScript
 - Vite
-- CSS
+- Modern CSS
 - ESLint
 
-## 🚀 Run Locally
+## 🚀 Run locally
 
-    git clone https://github.com/cypher2k22/portfolio-latest.git
-    cd portfolio-latest
-    npm install
-    npm run dev
+```bash
+git clone https://github.com/cypher2k22/portfolio-latest.git
+cd portfolio-latest
+npm install
+npm run dev
+```
 
 Production build:
 
-    npm run build
+```bash
+npm run build
+```
 
 Lint:
 
-    npm run lint
+```bash
+npm run lint
+```
 
-## 📌 Featured Projects
+## 📌 Selected projects
 
-- **BusTrack** — real-time public transport tracking platform
-- **Task Management System** — full-stack API-driven application
-- **Website Development** — frontend/backend integration and deployment
-- **Student Performance Analysis** — Python and Pandas data analysis
+| Project | Focus |
+|---|---|
+| [BusTrack](https://github.com/cypher2k22/BUS_TRACKER_PRO) | Real-time mobile platform |
+| [Task Management System](https://github.com/cypher2k22/taskmanagement) | Full-stack / API workflows |
+| [Website Development](https://github.com/cypher2k22/websitedevolepment) | Web / backend / deployment |
+| [Student Performance Analysis](https://github.com/cypher2k22/Students-Performance-analyse-in-Exams) | Python / Pandas / data analysis |
 
-## 👤 Author
+## 👤 About
 
 **Bakeerathan Karthigan**  
 Computer Engineering Undergraduate  
-University of Sri Jayewardenepura
+University of Sri Jayewardenepura · Expected 2028
 
-GitHub: https://github.com/cypher2k22
+- GitHub: https://github.com/cypher2k22
+- LinkedIn: https://www.linkedin.com/in/bakeerathan-karthigan-529a56256/
 
-## 📄 License
+## 📄 Status
 
-This portfolio is maintained as a personal project.
+Personal portfolio project. The project is intentionally kept focused and will evolve as stronger engineering work is shipped.
